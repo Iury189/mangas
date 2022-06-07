@@ -29,10 +29,6 @@ Exclusão de mangás | Funcionando
 
 ![](https://github.com/Iury189/php_mangas/blob/main/imagens/Cadastro.png?raw=true)
  
-<h1 align="center"> Listagem de mangás </h1>
-
-![](https://github.com/Iury189/php_mangas/blob/main/imagens/Listagem.png?raw=true)
-
 <h1 align="center"> Atualização de mangás </h1>
 
 ![](https://github.com/Iury189/php_mangas/blob/main/imagens/Atualizacao.png?raw=true)
