@@ -2,10 +2,10 @@
 -- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Tempo de geração: 07-Jun-2022 às 15:08
--- Versão do servidor: 10.4.24-MariaDB
--- versão do PHP: 8.1.6
+-- Host: localhost
+-- Generation Time: Jun 07, 2022 at 11:08 PM
+-- Server version: 10.4.24-MariaDB
+-- PHP Version: 8.1.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Banco de dados: `colecao`
+-- Database: `colecao`
 --
 
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `manga`
+-- Table structure for table `manga`
 --
 
 CREATE TABLE `manga` (
@@ -38,31 +38,39 @@ CREATE TABLE `manga` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Extraindo dados da tabela `manga`
+-- Dumping data for table `manga`
 --
 
 INSERT INTO `manga` (`id_manga`, `titulo`, `editora`, `volumes`, `desconto`, `valor`, `data_cadastro`) VALUES
-(1, 'Banya: O Mensageiro', 'Conrad', 5, '5.00', '30.00', '2022-06-07 12:59:01');
+(1, 'Banya: O Mensageiro', 'Conrad', 5, '5.00', '30.00', '2022-06-07 12:59:01'),
+(2, 'Gui: O Guerreiro Fantasma', 'Conrad', 5, '1.28', '35.85', '2022-06-07 18:45:21'),
+(3, 'Blue Dragon Ral Grad', 'JBC', 4, '9.00', '30.00', '2022-06-07 18:46:17'),
+(4, 'Dangu', 'Conrad', 9, '0.21', '70.75', '2022-06-07 18:46:54'),
+(5, 'Dragon\'s Dogma Progress', 'JBC', 2, '0.00', '20.00', '2022-06-07 18:47:45'),
+(6, 'All You Need Is Kill', 'JBC', 2, '4.79', '20.84', '2022-06-07 18:48:18'),
+(7, 'Resident Evil: Marhawa Desire', 'JBC', 5, '7.50', '28.22', '2022-06-07 18:49:02'),
+(8, 'Street Fighter Alpha', 'NewPop', 2, '7.71', '25.53', '2022-06-07 18:52:10'),
+(9, 'Street Fighter Sakura Ganbaru', 'NewPop', 2, '7.70', '25.53', '2022-06-07 18:52:46');
 
 --
--- Índices para tabelas despejadas
+-- Indexes for dumped tables
 --
 
 --
--- Índices para tabela `manga`
+-- Indexes for table `manga`
 --
 ALTER TABLE `manga`
   ADD PRIMARY KEY (`id_manga`);
 
 --
--- AUTO_INCREMENT de tabelas despejadas
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT de tabela `manga`
+-- AUTO_INCREMENT for table `manga`
 --
 ALTER TABLE `manga`
-  MODIFY `id_manga` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_manga` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
