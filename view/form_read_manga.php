@@ -10,6 +10,18 @@
 	<title> Listar coleções </title>
 </head>
 <body>
+	<?php
+		require_once "../model/MangaDAO.php";
+		$sql_desconto_total = "SELECT SUM(desconto) FROM manga";
+		$sql_valor_total = "SELECT SUM(valor) FROM manga";
+
+		$seleciona_desconto = BD::getInstance()->prepare($sql_desconto_total);
+		$seleciona_valor =  BD::getInstance()->prepare($sql_valor_total);
+		$seleciona_desconto->execute();
+		$seleciona_valor->execute();
+	    $linha_desconto = $seleciona_desconto->fetchColumn();
+		$linha_valor = $seleciona_valor->fetchColumn();
+	?>
 	<div class="container" style="margin-top: 40px;">
 		<h4 class="text-center">Lista de mangás</h4>
 		<small class="form-text text-muted text-center">Todos os mangás cadastrados são listados aqui</small>
@@ -53,6 +65,26 @@
             		}
         		?>
 			</tbody>
+			<tfoot>
+				<tr>
+					<th>Total</th>
+					<th></th>
+					<th></th>
+					<th></th>
+					<th title>
+						<?php
+							print_r("R$$linha_desconto");
+						?>
+					</th>
+					<th>
+						<?php
+							print_r("R$$linha_valor");
+						?>
+					</th>
+					<th> </th>
+					<th> </th>
+				</tr>
+        	</tfoot>
 		</table>
 	</div>
 </body>
