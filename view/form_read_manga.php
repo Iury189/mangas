@@ -12,13 +12,16 @@
 <body>
 	<?php
 		require_once "../model/MangaDAO.php";
+		// Realiza o SELECT do valor total de desconto e da colecao
 		$sql_desconto_total = "SELECT SUM(desconto) FROM manga";
 		$sql_valor_total = "SELECT SUM(valor) FROM manga";
-
+		// Vincula ao BD para preparar a operacao
 		$seleciona_desconto = BD::getInstance()->prepare($sql_desconto_total);
 		$seleciona_valor =  BD::getInstance()->prepare($sql_valor_total);
+		// Realiza a operacao
 		$seleciona_desconto->execute();
 		$seleciona_valor->execute();
+		// Retorna as colunas desejadas
 	    $linha_desconto = $seleciona_desconto->fetchColumn();
 		$linha_valor = $seleciona_valor->fetchColumn();
 	?>
@@ -29,7 +32,7 @@
 		<nav class="navbar navbar-light" id="barra_navegacao">
 		  <a href="/mangas/view/form_create_manga.php" class="btn btn-success" title="Cadastrar mangás"><i class="fa-light fa-plus"></i>&nbsp;Cadastrar</a>
 		</nav>
-		<table class="table table-hover" id="tabela">
+		<table class="table table-sm" id="tabela">
 			<thead>
 				<tr>
 					<th title="ID">ID</th>
@@ -44,7 +47,6 @@
 			</thead>
 			<tbody>
 				<?php
-					require_once "../model/MangaDAO.php";
 					$manga = new MangaDAO();
             		foreach ($manga->readAllMangas() as $valor){
                 		echo '<tr>';
@@ -71,14 +73,14 @@
 					<th></th>
 					<th></th>
 					<th></th>
-					<th title>
+					<th title="<?php echo "R$$linha_desconto"; ?>">
 						<?php
-							print_r("R$$linha_desconto");
+							echo "R$$linha_desconto";
 						?>
 					</th>
-					<th>
+					<th title="<?php echo "R$$linha_valor"; ?>">
 						<?php
-							print_r("R$$linha_valor");
+							echo "R$$linha_valor";
 						?>
 					</th>
 					<th> </th>
