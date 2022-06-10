@@ -20,6 +20,11 @@ Cadastro de mangás | Funcionando
 Listagem de mangás | Funcionando
 Atualização de mangás | Funcionando
 Exclusão de mangás | Funcionando
+Cálculo total dovalor de descontos obtidos nos mangás | Funcionando
+Cálculo total do valor das coleções de mangás | Funcionando
+  
+### Próximos passos <h3>
+- [ ] Documentar sistema. 
 
 <h1 align="center"> Página inicial </h1>
 
