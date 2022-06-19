@@ -2,6 +2,7 @@
 O sistema em questão trata-se de um CRUD (Create, Read, Update e Delete) de minha coleção pessoal de mangás.
   
 ### Ferramentas utilizadas <h3>
+* [AstahUML](https://astah.net/downloads/): Software de modelagem que permite uma fácil visualização dos componentes do sistema e sua interações através de diagramas. 
 * [Bootstrap](https://getbootstrap.com): Framework de desenvolvimento front-end que facilita a criação de layout das páginas.  
 * [MySQL Workbench](https://www.mysql.com/products/workbench/): É um sistema gerenciador de banco de dados que possui o propósito de realizar o armazenamento e a manutenção dos dados, também é uma ferramenta capaz de modelar o diagrama do banco de dados do sistema para facilitar a visualização e entendimento.
 * [Visual Studio Code](https://code.visualstudio.com): É um software multiplataforma para edição de código-fonte, podendo ser usada para desenvolvimento para diversos códigos, inclusive para desenvolvimento web.
@@ -16,12 +17,12 @@ O sistema em questão trata-se de um CRUD (Create, Read, Update e Delete) de min
 ### Funcionalidades do sistema <h3>
 Funcionalidade | Status
 ------------ | -------------
-Cadastro de mangás | Funcionando
-Listagem de mangás | Funcionando
-Atualização de mangás | Funcionando
-Exclusão de mangás | Funcionando
-Cálculo total dovalor de descontos obtidos nos mangás | Funcionando
-Cálculo total do valor das coleções de mangás | Funcionando
+Cadastrar uma coleção | Funcionando
+Listar todas as coleções cadastradas | Funcionando
+Atualizar determinada coleção | Funcionando
+Excluir determinada coleção | Funcionando
+Mostrar o cálculo total dos descontos obtidos | Funcionando
+Mostrar o cálculo total de todas as coleções cadastradas | Funcionando
   
 ### Próximos passos <h3>
 - [ ] Documentar sistema. 
