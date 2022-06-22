@@ -25,7 +25,7 @@ Mostrar o cálculo total dos descontos obtidos | Funcionando
 Mostrar o cálculo total de todas as coleções cadastradas | Funcionando
   
 ### Próximos passos <h3>
-- [ ] Documentar sistema. 
+- [x] Documentar sistema. 
 
 <h1 align="center"> Página inicial </h1>
 
