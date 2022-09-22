@@ -77,7 +77,7 @@
 		      <input type="text" class="form-control" name="valor" required title="Campo para inserir o valor da coleção" placeholder="Digite o valor total da coleção" 
 		      value="<?php echo $dados['valor'] ?>" onkeypress="$(this).mask('000.00', {reverse: true});">
 		    </div>
-		    <button type="submit" name="btn_atualizar" class="btn btn-info btn-lg btn-block" title="Atualizar coleção"><i class="fa fa-edit"></i>&nbsp;Atualizar</button>
+		    <button type="submit" name="btn_atualizar" class="btn btn-primary btn-lg btn-block" title="Atualizar coleção"><i class="fa fa-arrows-rotate"></i>&nbsp;Atualizar</button>
 	    </form>
 	</div>
 </body>

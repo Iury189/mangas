@@ -56,7 +56,7 @@
 		      <label>Valor da coleção:</label>
 		      <input type="text" class="form-control" id="id_valor" name="valor" required title="Campo para inserir o valor da coleção" placeholder="Digite o valor total da coleção" onkeypress="$(this).mask('000.00', {reverse: true});">
 		    </div>
-		    <button type="submit" name="btn_cadastrar" class="btn btn-success btn-lg btn-block" title="Cadastrar coleção"><i class="fa-light fa-plus"></i>&nbsp;Cadastrar</button>
+		    <button type="submit" name="btn_cadastrar" class="btn btn-success btn-lg btn-block" title="Cadastrar coleção"><i class="fa fa-plus"></i>&nbsp;Cadastrar</button>
 	    </form>
 	</div>
 </body>

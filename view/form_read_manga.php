@@ -30,7 +30,7 @@
 		<small class="form-text text-muted text-center">Todos os mangás cadastrados são listados aqui</small>
 		<br>
 		<nav class="navbar navbar-light" id="barra_navegacao">
-		  <a href="/mangas/view/form_create_manga.php" class="btn btn-success" title="Cadastrar mangás"><i class="fa-light fa-plus"></i>&nbsp;Cadastrar</a>
+		  <a href="/mangas/view/form_create_manga.php" class="btn btn-success" title="Cadastrar mangás"><i class="fa fa-plus"></i>&nbsp;Cadastrar</a>
 		</nav>
 		<table class="table table-sm" id="tabela">
 			<thead>
@@ -59,7 +59,7 @@
 	                		echo '<td title="'.date('d/m/Y H:i:s', strtotime($valor['data_cadastro'])).'">'.
 			 		        date('d/m/Y H:i:s', strtotime($valor['data_cadastro'])).'</td>';
 			 		        echo '<td>';
-    							echo '<a class="btn btn-info" title="Atualizar '.$valor['titulo'].'"'.'href="/mangas/view/form_update_manga.php?id='.$valor['id_manga'].'"role="button" ><i class="fa fa-edit"></i>&nbsp;Atualizar</a>';
+    							echo '<a class="btn btn-primary" title="Atualizar '.$valor['titulo'].'"'.'href="/mangas/view/form_update_manga.php?id='.$valor['id_manga'].'"role="button" ><i class="fa fa-arrows-rotate"></i>&nbsp;Atualizar</a>';
     							echo "&nbsp;";
     							echo '<a class="btn btn-danger" title="Deletar '.$valor['titulo'].'"'.'href="/mangas/controller/delete_manga.php?id='.$valor['id_manga'].'"role="button"><i class="fa fa-trash"></i>&nbsp;Deletar</a>';
     						echo '</td>';  	 		       

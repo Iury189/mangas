@@ -17,7 +17,7 @@
 		      <div class="card-body">
 		        <h5 class="card-title">Cadastro de mangás</h5>
 		        <p class="card-text">Formulário para cadastrar coleção de mangás.</p>
-		        <a href="/mangas/view/form_create_manga.php" class="btn btn-success" title="Cadastrar mangás"><i class="fa-light fa-plus"></i>&nbsp;Cadastrar</a>
+		        <a href="/mangas/view/form_create_manga.php" class="btn btn-success" title="Cadastrar mangás"><i class="fa fa-plus"></i>&nbsp;Cadastrar</a>
 		      </div>
 		    </div>
 		  </div>
@@ -26,7 +26,7 @@
 		      <div class="card-body">
 		        <h5 class="card-title" text-center>Listagem de mangás</h5>
 		        <p class="card-text">Tabela da qual lista todas as coleções cadastradas.</p>
-		        <a href="/mangas/view/form_read_manga.php" class="btn btn-warning" title="Listar mangás"><i class="fa-solid fa-table"></i>&nbsp;Listar</a>
+		        <a href="/mangas/view/form_read_manga.php" class="btn btn-warning" title="Listar mangás"><i class="fa fa-table"></i>&nbsp;Listar</a>
 		      </div>
 		    </div>
 		  </div>
